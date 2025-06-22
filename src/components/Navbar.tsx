@@ -40,7 +40,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300",
         isScrolled 
-          ? "bg-white/80 backdrop-blur-md shadow-sm" 
+          ? "bg-black/80 backdrop-blur-md shadow-sm" 
           : "bg-transparent"
       )}
     >
@@ -56,8 +56,8 @@ const Navbar = () => {
         >
           <img 
             src="/logo.svg" 
-            alt="Pulse Robot Logo" 
-            className="h-7 sm:h-8" 
+            alt="Logo Pulse Robot" 
+            className="h-7 sm:h-8 filter brightness-0 invert" 
           />
         </a>
 
@@ -65,23 +65,23 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8">
           <a 
             href="#" 
-            className="nav-link"
+            className="nav-link text-white hover:text-pulse-500"
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
             }}
           >
-            Home
+            Início
           </a>
-          <a href="#features" className="nav-link">About</a>
-          <a href="#details" className="nav-link">Contact</a>
+          <a href="#features" className="nav-link text-white hover:text-pulse-500">Sobre</a>
+          <a href="#details" className="nav-link text-white hover:text-pulse-500">Contato</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
         <button 
-          className="md:hidden text-gray-700 p-3 focus:outline-none" 
+          className="md:hidden text-white p-3 focus:outline-none" 
           onClick={toggleMenu}
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -89,13 +89,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation - improved for better touch experience */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
+        "fixed inset-0 z-40 bg-black flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
         <nav className="flex flex-col space-y-8 items-center mt-8">
           <a 
             href="#" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white" 
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
@@ -103,27 +103,27 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Home
+            Início
           </a>
           <a 
             href="#features" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            About
+            Sobre
           </a>
           <a 
             href="#details" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            Contact
+            Contato
           </a>
         </nav>
       </div>
