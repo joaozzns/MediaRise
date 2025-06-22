@@ -88,20 +88,20 @@ const HumanoidSection = () => {
       className="relative" 
       style={{ height: '300vh' }}
     >
-      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="why-humanoid">
+      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-black" id="why-humanoid">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
           <div className="mb-2 md:mb-3">
             <div className="flex items-center gap-4 mb-2 md:mb-2 pt-8 sm:pt-6 md:pt-4">
-              <div className="pulse-chip opacity-0 animate-fade-in" style={{
+              <div className="pulse-chip opacity-0 animate-fade-in bg-white/10 text-white border-white/20" style={{
                 animationDelay: "0.1s"
               }}>
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">02</span>
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#FFB300] text-black mr-2">02</span>
                 <span>Humanoid</span>
               </div>
             </div>
             
-            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2">
-              Why Humanoid
+            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2 text-white">
+              POR QUE ESCOLHER A <span className="text-[#FFB300]">MEDIARISE</span>?
             </h2>
           </div>
           
@@ -117,7 +117,7 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/80 to-black/90"
                 style={{
                   backgroundImage: "url('/background-section1.png')",
                   backgroundSize: "cover",
@@ -127,15 +127,15 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">The vision</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#FFB300]/20 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                  <span className="text-sm font-medium">Performance</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    We're giving AI a way to navigate the physical world
+                    Montamos e executamos tudo com foco em performance: criação, tráfego, testes e otimização.
                   </h3>
                 </div>
               </div>
@@ -153,7 +153,7 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/80 to-black/90"
                 style={{
                   backgroundImage: "url('/background-section2.png')",
                   backgroundSize: "cover",
@@ -163,15 +163,15 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">The vision</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#FFB300]/20 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                  <span className="text-sm font-medium">Estratégia</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    We're bringing adaptive intelligence to where humans work
+                    Pesquisas de mercado, análise de concorrentes e dados comportamentais antes de qualquer campanha.
                   </h3>
                 </div>
               </div>
@@ -189,7 +189,7 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/80 to-black/90"
                 style={{
                   backgroundImage: "url('/background-section3.png')",
                   backgroundSize: "cover",
@@ -199,15 +199,15 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
-                  <span className="text-sm font-medium">The vision</span>
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#FFB300]/20 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                  <span className="text-sm font-medium">Branding</span>
                 </div>
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
                 <div className="max-w-lg">
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    We're creating companions, <span className="text-[#FC4D0A]">not replacements</span>
+                    Construa uma marca que as pessoas <span className="text-[#FFB300]">reconhecem e lembram</span>
                   </h3>
                 </div>
               </div>
