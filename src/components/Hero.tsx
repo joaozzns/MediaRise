@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
@@ -111,7 +110,8 @@ const Hero = () => {
               className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in text-white" 
               style={{ animationDelay: "0.3s" }}
             >
-              Atlas: Onde Código<br className="hidden sm:inline" />Encontra Movimento
+              SOBRE A <br className="hidden sm:inline" />
+              <span className="text-[#FFB300]">MEDIARISE</span>
             </h1>
             
             <p 
@@ -149,7 +149,7 @@ const Hero = () => {
                   e.currentTarget.style.borderColor = '#FFB300';
                 }}
               >
-                Solicitar Acesso
+                Agende uma Consultoria Gratuita
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
