@@ -98,14 +98,6 @@ const Hero = () => {
       <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
           <div className="w-full lg:w-1/2">
-            <div 
-              className="pulse-chip mb-3 sm:mb-6 opacity-0 animate-fade-in bg-white/10 text-white border-white/20" 
-              style={{ animationDelay: "0.1s" }}
-            >
-              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#FFB300] text-black mr-2">01</span>
-              <span>Propósito</span>
-            </div>
-            
             <h1 
               className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in text-white" 
               style={{ animationDelay: "0.3s" }}
@@ -118,7 +110,9 @@ const Hero = () => {
               style={{ animationDelay: "0.5s" }} 
               className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-300 font-normal text-base sm:text-lg text-left"
             >
-              O companheiro humanoide que aprende e se adapta junto com você.
+              Na MediaRise, não somos apenas mais uma agência de marketing digital. Somos os estrategistas por trás do crescimento de marcas que hoje lideram seus mercados.
+              <br /><br />
+              Nossa missão é simples: tirar negócios da zona comum e levá-los a um novo nível de visibilidade e resultado. Combinamos inteligência de mercado, criatividade estratégica e execução de alta performance, sempre focados em uma coisa: crescimento real e mensurável.
             </p>
             
             <div 
