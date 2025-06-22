@@ -103,7 +103,7 @@ const Hero = () => {
               className="pulse-chip mb-3 sm:mb-6 opacity-0 animate-fade-in bg-white/10 text-white border-white/20" 
               style={{ animationDelay: "0.1s" }}
             >
-              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-pulse-500 text-white mr-2">01</span>
+              <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#FFB300] text-black mr-2">01</span>
               <span>Propósito</span>
             </div>
             
@@ -129,15 +129,24 @@ const Hero = () => {
                 href="#get-access" 
                 className="flex items-center justify-center group w-full sm:w-auto text-center" 
                 style={{
-                  backgroundColor: '#FE5C02',
+                  backgroundColor: '#FFB300',
                   borderRadius: '1440px',
                   boxSizing: 'border-box',
-                  color: '#FFFFFF',
+                  color: '#000000',
                   cursor: 'pointer',
                   fontSize: '14px',
                   lineHeight: '20px',
                   padding: '16px 24px',
-                  border: '1px solid white',
+                  border: '1px solid #FFB300',
+                  transition: 'all 0.3s ease'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = '#E6A000';
+                  e.currentTarget.style.borderColor = '#E6A000';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor = '#FFB300';
+                  e.currentTarget.style.borderColor = '#FFB300';
                 }}
               >
                 Solicitar Acesso

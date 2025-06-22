@@ -65,7 +65,7 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8">
           <a 
             href="#" 
-            className="nav-link text-white hover:text-pulse-500"
+            className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full"
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
@@ -73,8 +73,8 @@ const Navbar = () => {
           >
             Início
           </a>
-          <a href="#features" className="nav-link text-white hover:text-pulse-500">Sobre</a>
-          <a href="#details" className="nav-link text-white hover:text-pulse-500">Contato</a>
+          <a href="#features" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">Sobre</a>
+          <a href="#details" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">Contato</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -95,7 +95,7 @@ const Navbar = () => {
         <nav className="flex flex-col space-y-8 items-center mt-8">
           <a 
             href="#" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white hover:text-[#FFB300] transition-colors duration-300" 
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
@@ -107,7 +107,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#features" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white hover:text-[#FFB300] transition-colors duration-300" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
@@ -117,7 +117,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#details" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white hover:text-[#FFB300] transition-colors duration-300" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';

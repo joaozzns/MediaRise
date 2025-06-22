@@ -31,8 +31,6 @@ const CTA = () => {
   
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-white relative" id="get-access" ref={ctaRef}>
-      {/* Background gradient at the top has been removed */}
-      
       <div className="section-container relative z-10 opacity-0 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto glass-card p-6 sm:p-8 md:p-10 lg:p-14 text-center overflow-hidden relative">
           {/* Decorative circles */}
@@ -45,7 +43,7 @@ const CTA = () => {
           
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Be Among the First to <br className="hidden sm:inline" />
-            <span className="text-pulse-500">Experience Atlas</span>
+            <span className="text-[#FFB300]">Experience Atlas</span>
           </h2>
           
           <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
@@ -53,7 +51,10 @@ const CTA = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#contact" className="button-primary group flex items-center justify-center w-full sm:w-auto">
+            <a 
+              href="#contact" 
+              className="group flex items-center justify-center w-full sm:w-auto bg-[#FFB300] hover:bg-[#E6A000] text-black font-medium py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-[1.02] active:scale-[0.98]"
+            >
               Request Early Access
               <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
