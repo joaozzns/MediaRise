@@ -52,12 +52,12 @@ const Navbar = () => {
             e.preventDefault();
             scrollToTop();
           }}
-          aria-label="Pulse Robot"
+          aria-label="MediaRise"
         >
           <img 
-            src="/logo.svg" 
-            alt="Logo Pulse Robot" 
-            className="h-7 sm:h-8 filter brightness-0 invert" 
+            src="/lovable-uploads/9bf7d1f7-bcd6-4ee2-bd76-39814439f351.png" 
+            alt="Logo MediaRise" 
+            className="h-8 sm:h-10" 
           />
         </a>
 

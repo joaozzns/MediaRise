@@ -113,11 +113,13 @@ const HumanoidSection = () => {
                 ...cardStyle,
                 zIndex: 10,
                 transform: `translateY(${isFirstCardVisible ? '90px' : '200px'}) scale(0.9)`,
-                opacity: isFirstCardVisible ? 0.9 : 0
+                opacity: isFirstCardVisible ? 0.9 : 0,
+                backgroundColor: '#1E1E1E',
+                boxShadow: '0 20px 40px rgba(255, 179, 0, 0.1), inset 0 1px 0 rgba(255, 179, 0, 0.1)'
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-black/80 to-black/90"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60"
                 style={{
                   backgroundImage: "url('/background-section1.png')",
                   backgroundSize: "cover",
@@ -149,11 +151,13 @@ const HumanoidSection = () => {
                 zIndex: 20,
                 transform: `translateY(${isSecondCardVisible ? activeCardIndex === 1 ? '55px' : '45px' : '200px'}) scale(0.95)`,
                 opacity: isSecondCardVisible ? 1 : 0,
-                pointerEvents: isSecondCardVisible ? 'auto' : 'none'
+                pointerEvents: isSecondCardVisible ? 'auto' : 'none',
+                backgroundColor: '#1E1E1E',
+                boxShadow: '0 20px 40px rgba(255, 179, 0, 0.15), inset 0 1px 0 rgba(255, 179, 0, 0.15)'
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-black/80 to-black/90"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60"
                 style={{
                   backgroundImage: "url('/background-section2.png')",
                   backgroundSize: "cover",
@@ -185,11 +189,13 @@ const HumanoidSection = () => {
                 zIndex: 30,
                 transform: `translateY(${isThirdCardVisible ? activeCardIndex === 2 ? '15px' : '0' : '200px'}) scale(1)`,
                 opacity: isThirdCardVisible ? 1 : 0,
-                pointerEvents: isThirdCardVisible ? 'auto' : 'none'
+                pointerEvents: isThirdCardVisible ? 'auto' : 'none',
+                backgroundColor: '#1E1E1E',
+                boxShadow: '0 20px 40px rgba(255, 179, 0, 0.2), inset 0 1px 0 rgba(255, 179, 0, 0.2)'
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-black/80 to-black/90"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60"
                 style={{
                   backgroundImage: "url('/background-section3.png')",
                   backgroundSize: "cover",
