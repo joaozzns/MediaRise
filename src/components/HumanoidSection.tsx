@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef, useState } from "react";
 
 const HumanoidSection = () => {
@@ -91,16 +90,7 @@ const HumanoidSection = () => {
       <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-black" id="why-humanoid">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
           <div className="mb-2 md:mb-3">
-            <div className="flex items-center gap-4 mb-2 md:mb-2 pt-8 sm:pt-6 md:pt-4">
-              <div className="pulse-chip opacity-0 animate-fade-in bg-white/10 text-white border-white/20" style={{
-                animationDelay: "0.1s"
-              }}>
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#FFB300] text-black mr-2">02</span>
-                <span>Humanoid</span>
-              </div>
-            </div>
-            
-            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2 text-white">
+            <h2 className="section-title text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-1 md:mb-2 text-white pt-8 sm:pt-6 md:pt-4">
               POR QUE ESCOLHER A <span className="text-[#FFB300]">MEDIARISE</span>?
             </h2>
           </div>
@@ -129,7 +119,7 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#FFB300]/20 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black/80 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
                   <span className="text-sm font-medium">Performance</span>
                 </div>
               </div>
@@ -167,7 +157,7 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#FFB300]/20 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black/80 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
                   <span className="text-sm font-medium">Estratégia</span>
                 </div>
               </div>
@@ -205,7 +195,7 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-[#FFB300]/20 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black/80 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
                   <span className="text-sm font-medium">Branding</span>
                 </div>
               </div>

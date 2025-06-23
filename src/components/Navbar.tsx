@@ -57,7 +57,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/9bf7d1f7-bcd6-4ee2-bd76-39814439f351.png" 
             alt="Logo MediaRise" 
-            className="h-8 sm:h-10" 
+            className="h-10 sm:h-12" 
           />
         </a>
 
