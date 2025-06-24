@@ -28,7 +28,7 @@ const Footer = () => {
             href="https://www.instagram.com/agenciamediarise/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="flex items-center gap-2 bg-[#FFB300] hover:bg-[#E6A000] text-black px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105"
           >
             <Instagram size={20} />
             <span>Siga no Instagram</span>
