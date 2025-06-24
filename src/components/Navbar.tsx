@@ -73,7 +73,6 @@ const Navbar = () => {
           >
             Início
           </a>
-          <a href="#features" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">Sobre</a>
           <a href="#details" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">Contato</a>
         </nav>
 
@@ -104,16 +103,6 @@ const Navbar = () => {
             }}
           >
             Início
-          </a>
-          <a 
-            href="#features" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white hover:text-[#FFB300] transition-colors duration-300" 
-            onClick={() => {
-              setIsMenuOpen(false);
-              document.body.style.overflow = '';
-            }}
-          >
-            Sobre
           </a>
           <a 
             href="#details" 

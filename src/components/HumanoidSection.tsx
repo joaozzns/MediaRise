@@ -104,12 +104,12 @@ const HumanoidSection = () => {
                 zIndex: 10,
                 transform: `translateY(${isFirstCardVisible ? '90px' : '200px'}) scale(0.9)`,
                 opacity: isFirstCardVisible ? 0.9 : 0,
-                backgroundColor: '#1E1E1E',
-                boxShadow: '0 20px 40px rgba(255, 179, 0, 0.1), inset 0 1px 0 rgba(255, 179, 0, 0.1)'
+                backgroundColor: '#2A2A2A',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)'
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 to-black/50"
                 style={{
                   backgroundImage: "url('/background-section1.png')",
                   backgroundSize: "cover",
@@ -119,7 +119,7 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black/80 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-gray-800/80 backdrop-blur-sm text-gray-300 border border-gray-600/30">
                   <span className="text-sm font-medium">Performance</span>
                 </div>
               </div>
@@ -142,12 +142,12 @@ const HumanoidSection = () => {
                 transform: `translateY(${isSecondCardVisible ? activeCardIndex === 1 ? '55px' : '45px' : '200px'}) scale(0.95)`,
                 opacity: isSecondCardVisible ? 1 : 0,
                 pointerEvents: isSecondCardVisible ? 'auto' : 'none',
-                backgroundColor: '#1E1E1E',
-                boxShadow: '0 20px 40px rgba(255, 179, 0, 0.15), inset 0 1px 0 rgba(255, 179, 0, 0.15)'
+                backgroundColor: '#383838',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15)'
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 to-black/50"
                 style={{
                   backgroundImage: "url('/background-section2.png')",
                   backgroundSize: "cover",
@@ -157,7 +157,7 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black/80 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-gray-700/80 backdrop-blur-sm text-gray-200 border border-gray-500/30">
                   <span className="text-sm font-medium">Estratégia</span>
                 </div>
               </div>
@@ -180,12 +180,12 @@ const HumanoidSection = () => {
                 transform: `translateY(${isThirdCardVisible ? activeCardIndex === 2 ? '15px' : '0' : '200px'}) scale(1)`,
                 opacity: isThirdCardVisible ? 1 : 0,
                 pointerEvents: isThirdCardVisible ? 'auto' : 'none',
-                backgroundColor: '#1E1E1E',
-                boxShadow: '0 20px 40px rgba(255, 179, 0, 0.2), inset 0 1px 0 rgba(255, 179, 0, 0.2)'
+                backgroundColor: '#454545',
+                boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-black/40 to-black/60"
+                className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 to-black/50"
                 style={{
                   backgroundImage: "url('/background-section3.png')",
                   backgroundSize: "cover",
@@ -195,7 +195,7 @@ const HumanoidSection = () => {
               ></div>
               
               <div className="absolute top-4 right-4 z-20">
-                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-black/80 backdrop-blur-sm text-[#FFB300] border border-[#FFB300]/30">
+                <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-gray-600/80 backdrop-blur-sm text-gray-100 border border-gray-400/30">
                   <span className="text-sm font-medium">Branding</span>
                 </div>
               </div>
