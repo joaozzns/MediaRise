@@ -1,11 +1,8 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HumanoidSection from "@/components/HumanoidSection";
-import SpecsSection from "@/components/SpecsSection";
 import DetailsSection from "@/components/DetailsSection";
-import MadeByHumans from "@/components/MadeByHumans";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -60,9 +57,7 @@ const Index = () => {
       <main className="space-y-4 sm:space-y-8">
         <Hero />
         <HumanoidSection />
-        <SpecsSection />
         <DetailsSection />
-        <MadeByHumans />
       </main>
       <Footer />
     </div>
