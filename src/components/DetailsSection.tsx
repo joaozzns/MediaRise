@@ -28,8 +28,14 @@ const DetailsSection = () => {
       return;
     }
 
-    // Demo form submission
-    toast.success("Request submitted successfully!");
+    // Create email body with form data
+    const emailBody = `Nome: ${formData.fullName}%0AEmail: ${formData.email}%0ATelefone: ${formData.phone}%0AEmpresa: ${formData.company}%0AMensagem: ${formData.message}`;
+    
+    // Open email client
+    window.open(`mailto:agenciamediarise@gmail.com?subject=Contato pelo Site&body=${emailBody}`, '_blank');
+
+    // Show success message
+    toast.success("Redirecionando para seu cliente de email!");
 
     // Reset form
     setFormData({

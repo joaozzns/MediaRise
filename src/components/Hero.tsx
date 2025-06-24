@@ -120,7 +120,8 @@ const Hero = () => {
               style={{ animationDelay: "0.7s" }}
             >
               <a 
-                href="#get-access" 
+                href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Gratuita" 
+                target="_blank"
                 className="flex items-center justify-center group w-full sm:w-auto text-center" 
                 style={{
                   backgroundColor: '#FFB300',

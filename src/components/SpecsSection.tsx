@@ -61,9 +61,13 @@ const SpecsSection = () => {
             </div>
             
             <div className="mt-8">
-              <button className="bg-[#FFB300] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#FFB300]/90 transition-colors">
+              <a 
+                href="https://wa.me/5531986173170?text=Solicite%20um%20Or%C3%A7amento" 
+                target="_blank"
+                className="bg-[#FFB300] text-black px-8 py-3 rounded-full font-semibold hover:bg-[#FFB300]/90 transition-colors"
+              >
                 Solicite um Orçamento
-              </button>
+              </a>
             </div>
           </div>
         </div>
