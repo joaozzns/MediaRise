@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import HumanoidSection from "@/components/HumanoidSection";
+import CallToActionSection from "@/components/CallToActionSection";
 import DetailsSection from "@/components/DetailsSection";
 import Footer from "@/components/Footer";
 
@@ -57,6 +58,7 @@ const Index = () => {
       <main className="space-y-4 sm:space-y-8">
         <Hero />
         <HumanoidSection />
+        <CallToActionSection />
         <DetailsSection />
       </main>
       <Footer />
