@@ -46,7 +46,9 @@ const Navbar = () => {
               target="_blank" 
               className="text-white hover:text-[#FFB300] transition-colors"
             >
-              <Instagram className="w-6 h-6" />
+              <div className="w-6 h-6">
+              <a
+                href=https://www.instagram.com/agenciamediarise/"
             </a>
           </div>
         </div>
