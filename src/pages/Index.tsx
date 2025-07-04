@@ -1,7 +1,9 @@
+
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import HumanoidSection from "@/components/HumanoidSection";
+import ServicesSection from "@/components/ServicesSection";
+import AboutSection from "@/components/AboutSection";
 import CallToActionSection from "@/components/CallToActionSection";
 import DetailsSection from "@/components/DetailsSection";
 import Footer from "@/components/Footer";
@@ -55,9 +57,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="space-y-4 sm:space-y-8">
+      <main className="space-y-0">
         <Hero />
-        <HumanoidSection />
+        <ServicesSection />
+        <AboutSection />
         <CallToActionSection />
         <DetailsSection />
       </main>

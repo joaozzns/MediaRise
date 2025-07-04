@@ -2,12 +2,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
-import LottieAnimation from "./LottieAnimation";
 
 const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
-  const imageRef = useRef<HTMLImageElement>(null);
-  const [lottieData, setLottieData] = useState<any>(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -21,166 +18,74 @@ const Hero = () => {
     
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
-
-  useEffect(() => {
-    fetch('/loop-header.lottie')
-      .then(response => response.json())
-      .then(data => setLottieData(data))
-      .catch(error => console.error("Error loading Lottie animation:", error));
-  }, []);
-
-  useEffect(() => {
-    // Skip effect on mobile
-    if (isMobile) return;
-    
-    const handleMouseMove = (e: MouseEvent) => {
-      if (!containerRef.current || !imageRef.current) return;
-      
-      const {
-        left,
-        top,
-        width,
-        height
-      } = containerRef.current.getBoundingClientRect();
-      const x = (e.clientX - left) / width - 0.5;
-      const y = (e.clientY - top) / height - 0.5;
-
-      imageRef.current.style.transform = `perspective(1000px) rotateY(${x * 2.5}deg) rotateX(${-y * 2.5}deg) scale3d(1.02, 1.02, 1.02)`;
-    };
-    
-    const handleMouseLeave = () => {
-      if (!imageRef.current) return;
-      imageRef.current.style.transform = `perspective(1000px) rotateY(0deg) rotateX(0deg) scale3d(1, 1, 1)`;
-    };
-    
-    const container = containerRef.current;
-    if (container) {
-      container.addEventListener("mousemove", handleMouseMove);
-      container.addEventListener("mouseleave", handleMouseLeave);
-    }
-    
-    return () => {
-      if (container) {
-        container.removeEventListener("mousemove", handleMouseMove);
-        container.removeEventListener("mouseleave", handleMouseLeave);
-      }
-    };
-  }, [isMobile]);
-  
-  useEffect(() => {
-    // Skip parallax on mobile
-    if (isMobile) return;
-    
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const elements = document.querySelectorAll('.parallax');
-      elements.forEach(el => {
-        const element = el as HTMLElement;
-        const speed = parseFloat(element.dataset.speed || '0.1');
-        const yPos = -scrollY * speed;
-        element.style.setProperty('--parallax-y', `${yPos}px`);
-      });
-    };
-    
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isMobile]);
   
   return (
     <section 
-      className="overflow-hidden relative bg-black" 
+      className="overflow-hidden relative bg-black min-h-screen flex items-center justify-center" 
       id="hero" 
       style={{
-        padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
+        backgroundImage: "url('/lovable-uploads/fa9258dd-7589-4a50-b78d-da04b8331d26.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
       }}
     >
-      <div className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] bg-pulse-gradient opacity-20 blur-3xl rounded-full"></div>
+      {/* Dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
       
-      <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
-          <div className="w-full lg:w-1/2">
-            <h1 
-              className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in text-white" 
-              style={{ animationDelay: "0.3s" }}
-            >
-              SOBRE A <br className="hidden sm:inline" />
-              <span className="text-[#FFB300]">MEDIARISE</span>
-            </h1>
-            
-            <p 
-              style={{ animationDelay: "0.5s" }} 
-              className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-300 font-normal text-base sm:text-lg text-left"
-            >
-              Na MediaRise, não somos apenas mais uma agência de marketing digital. Somos os estrategistas por trás do crescimento de marcas que hoje lideram seus mercados.
-              <br /><br />
-              Nossa missão é simples: tirar negócios da zona comum e levá-los a um novo nível de visibilidade e resultado. Combinamos inteligência de mercado, criatividade estratégica e execução de alta performance, sempre focados em uma coisa: crescimento real e mensurável.
-            </p>
-            
-            <div 
-              className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" 
-              style={{ animationDelay: "0.7s" }}
-            >
-              <a 
-                href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Gratuita" 
-                target="_blank"
-                className="flex items-center justify-center group w-full sm:w-auto text-center" 
-                style={{
-                  backgroundColor: '#FFB300',
-                  borderRadius: '1440px',
-                  boxSizing: 'border-box',
-                  color: '#000000',
-                  cursor: 'pointer',
-                  fontSize: '14px',
-                  lineHeight: '20px',
-                  padding: '16px 24px',
-                  border: '1px solid #FFB300',
-                  transition: 'all 0.3s ease'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.backgroundColor = '#E6A000';
-                  e.currentTarget.style.borderColor = '#E6A000';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.backgroundColor = '#FFB300';
-                  e.currentTarget.style.borderColor = '#FFB300';
-                }}
-              >
-                Agende uma Consultoria Gratuita
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </a>
-            </div>
-          </div>
+      <div className="container px-4 sm:px-6 lg:px-8 relative z-10" ref={containerRef}>
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 
+            className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight opacity-0 animate-fade-in text-white mb-6" 
+            style={{ animationDelay: "0.3s" }}
+          >
+            QUAL O SEU <br />
+            <span className="text-white">DIFERENCIAL?</span>
+          </h1>
           
-          <div className="w-full lg:w-1/2 relative mt-6 lg:mt-0">
-            {lottieData ? (
-              <div className="relative z-10 animate-fade-in" style={{ animationDelay: "0.9s" }}>
-                <LottieAnimation 
-                  animationPath={lottieData} 
-                  className="w-full h-auto max-w-lg mx-auto"
-                  loop={true}
-                  autoplay={true}
-                />
-              </div>
-            ) : (
-              <>
-              <div className="absolute inset-0 bg-gray-800 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
-              <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
-                <img 
-                  ref={imageRef} 
-                  src="/lovable-uploads/da97c366-e7d4-4a21-80d3-85de190ad201.png" 
-                  alt="Astronauta" 
-                  className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
-                  style={{ transformStyle: 'preserve-3d' }} 
-                />
-                <div className="absolute inset-0" style={{ backgroundImage: 'url("/hero-image.jpg")', backgroundSize: 'cover', backgroundPosition: 'center', mixBlendMode: 'overlay', opacity: 0.3 }}></div>
-              </div>
-              </>
-            )}
+          <p 
+            style={{ animationDelay: "0.5s" }} 
+            className="text-xl sm:text-2xl lg:text-3xl font-bold mb-8 opacity-0 animate-fade-in text-white"
+          >
+            O NOSSO É <span className="text-[#FFB300]">VOCÊ!</span>
+          </p>
+          
+          <div 
+            className="flex flex-col sm:flex-row justify-center gap-4 opacity-0 animate-fade-in" 
+            style={{ animationDelay: "0.7s" }}
+          >
+            <a 
+              href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Gratuita" 
+              target="_blank"
+              className="flex items-center justify-center group w-full sm:w-auto text-center" 
+              style={{
+                backgroundColor: '#FFB300',
+                borderRadius: '1440px',
+                boxSizing: 'border-box',
+                color: '#000000',
+                cursor: 'pointer',
+                fontSize: '16px',
+                lineHeight: '20px',
+                padding: '16px 32px',
+                border: '1px solid #FFB300',
+                transition: 'all 0.3s ease',
+                fontWeight: '600'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = '#E6A000';
+                e.currentTarget.style.borderColor = '#E6A000';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = '#FFB300';
+                e.currentTarget.style.borderColor = '#FFB300';
+              }}
+            >
+              Agende uma Consultoria Gratuita
+              <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
         </div>
       </div>
-      
-      <div className="hidden lg:block absolute bottom-0 left-1/4 w-64 h-64 bg-pulse-100/30 rounded-full blur-3xl -z-10 parallax" data-speed="0.05"></div>
     </section>
   );
 };

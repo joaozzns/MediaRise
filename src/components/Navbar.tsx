@@ -71,12 +71,14 @@ const Navbar = () => {
               scrollToTop();
             }}
           >
-            Início
+            HOME
           </a>
-          <a href="#details" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">Contato</a>
+          <a href="#servicos" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">SERVIÇOS</a>
+          <a href="#sobre" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">QUEM SOMOS</a>
+          <a href="#details" className="relative text-white hover:text-[#FFB300] py-2 transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-[#FFB300] after:transition-all hover:after:w-full">ORÇAMENTO</a>
         </nav>
 
-        {/* Mobile menu button - increased touch target */}
+        {/* Mobile menu button */}
         <button 
           className="md:hidden text-white p-3 focus:outline-none" 
           onClick={toggleMenu}
@@ -86,7 +88,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation - improved for better touch experience */}
+      {/* Mobile Navigation */}
       <div className={cn(
         "fixed inset-0 z-40 bg-black flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
@@ -102,7 +104,27 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Início
+            HOME
+          </a>
+          <a 
+            href="#servicos" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white hover:text-[#FFB300] transition-colors duration-300" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            SERVIÇOS
+          </a>
+          <a 
+            href="#sobre" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-800 text-white hover:text-[#FFB300] transition-colors duration-300" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            QUEM SOMOS
           </a>
           <a 
             href="#details" 
@@ -112,7 +134,7 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Contato
+            ORÇAMENTO
           </a>
         </nav>
       </div>
