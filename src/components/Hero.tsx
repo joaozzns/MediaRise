@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
@@ -23,7 +24,7 @@ const Hero = () => {
       className="overflow-hidden relative bg-black min-h-screen flex items-center justify-center" 
       id="hero" 
       style={{
-        backgroundImage: "url('/lovable-uploads/fa9258dd-7589-4a50-b78d-da04b8331d26.png')",
+        backgroundImage: "url('/lovable-uploads/9feb14a2-582e-49e2-a701-444d9232b71e.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
