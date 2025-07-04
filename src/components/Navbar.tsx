@@ -9,11 +9,11 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-[#FFB300] font-bold text-xl">
-              <span className="inline-block transform rotate-45 mr-2">📈</span>
-              MediaRise
-            </div>
-            <span className="text-gray-400 text-sm ml-2">AGÊNCIA</span>
+            <img 
+              src="/lovable-uploads/0c2aaa15-cd2c-4374-a721-97c59c546496.png" 
+              alt="MediaRise Agência" 
+              className="h-8 w-auto"
+            />
           </div>
 
           {/* Navigation Links */}

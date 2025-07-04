@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Users, Megaphone, Palette, Globe, MessageSquare } from "lucide-react";
 
@@ -30,16 +29,7 @@ const ServicesSection = () => {
     <section 
       className="py-20 bg-gray-100 relative overflow-hidden" 
       id="servicos"
-      style={{
-        backgroundImage: "url('/lovable-uploads/3e56d883-b54f-4f21-9af9-0476a3d24556.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
-      }}
     >
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-white/90"></div>
-      
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-black">
