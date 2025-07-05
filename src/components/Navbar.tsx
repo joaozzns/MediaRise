@@ -42,12 +42,12 @@ const Navbar = () => {
               <MessageCircle className="w-6 h-6" />
             </a>
             <a 
-              href="#" 
+              href="https://www.instagram.com/agenciamediarise/" 
               target="_blank" 
               className="text-white hover:text-[#FFB300] transition-colors"
             >
-              <instagram className="w-6 h-6">
-             </a>
+              <Instagram className="w-6 h-6" />
+            </a>
           </div>
         </div>
       </div>
