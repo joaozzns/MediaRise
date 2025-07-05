@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Users, Megaphone, Palette, Globe, MessageSquare } from "lucide-react";
 
@@ -75,7 +76,8 @@ const ServicesSection = () => {
           <a 
             href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Online" 
             target="_blank"
-            className="inline-block bg-[#FFB300] hover:bg-[#E6A000] text-black font-bold py-4 px-8 text-lg transition-colors duration-300"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#FFB300] hover:bg-[#E6A000] text-black font-bold py-4 px-8 rounded-full text-lg transition-colors duration-300"
             style={{
               textTransform: 'uppercase',
               letterSpacing: '1px'

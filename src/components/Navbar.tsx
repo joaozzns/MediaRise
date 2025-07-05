@@ -37,6 +37,7 @@ const Navbar = () => {
             <a 
               href="https://wa.me/5531986173170" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-white hover:text-[#FFB300] transition-colors"
             >
               <MessageCircle className="w-6 h-6" />
@@ -44,6 +45,7 @@ const Navbar = () => {
             <a 
               href="https://www.instagram.com/agenciamediarise/" 
               target="_blank" 
+              rel="noopener noreferrer"
               className="text-white hover:text-[#FFB300] transition-colors"
             >
               <Instagram className="w-6 h-6" />
