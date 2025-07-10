@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
@@ -23,7 +24,7 @@ const Hero = () => {
       className="overflow-hidden relative bg-black min-h-screen flex items-center justify-center" 
       id="hero" 
       style={{
-        backgroundImage: "url('/lovable-uploads/9feb14a2-582e-49e2-a701-444d9232b71e.png')",
+        backgroundImage: "url('/lovable-uploads/8119ea1c-bd81-41d6-aacd-7e943b9e86c0.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -34,7 +35,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/20"></div>
       
       <div className="container px-4 sm:px-6 lg:px-8 relative z-10" ref={containerRef}>
-        
+        <div className="text-center max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-6 leading-tight">
+            QUAL O SEU DIFERENCIAL?
+          </h1>
+        </div>
       </div>
     </section>
   );
