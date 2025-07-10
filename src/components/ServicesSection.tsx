@@ -89,13 +89,13 @@ const ServicesSection = () => {
               href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Gratuita" 
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 text-white font-bold py-4 px-8 sm:py-5 sm:px-12 rounded-full text-base sm:text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg border-2 border-green-400/30 hover:border-green-300/50 w-full max-w-md sm:max-w-lg md:max-w-xl"
+              className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#FFB300] via-[#FFB300] to-[#FF8C00] hover:from-[#FF8C00] hover:via-[#FFB300] hover:to-[#FFB300] text-black font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-full text-sm sm:text-base transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg border-2 border-[#FFB300]/30 hover:border-[#FF8C00]/50 w-full max-w-sm sm:max-w-md md:max-w-lg"
             >
               {/* WhatsApp Icon */}
-              <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 fill-current" />
+              <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
               
               {/* Button Text */}
-              <span className="relative z-10 font-extrabold tracking-wide uppercase text-sm sm:text-base md:text-lg leading-tight">
+              <span className="relative z-10 font-extrabold tracking-wide uppercase text-xs sm:text-sm md:text-base leading-tight">
                 Agende uma Consultoria Gratuita
               </span>
               
@@ -103,10 +103,10 @@ const ServicesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-full"></div>
               
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-green-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 scale-110"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#FFB300]/20 to-[#FF8C00]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 scale-110"></div>
               
               {/* Pulse Ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-green-300/30 scale-100 group-hover:scale-110 group-hover:border-green-200/50 transition-all duration-500 animate-pulse"></div>
+              <div className="absolute inset-0 rounded-full border-2 border-[#FFB300]/30 scale-100 group-hover:scale-110 group-hover:border-[#FF8C00]/50 transition-all duration-500 animate-pulse"></div>
             </a>
           </div>
         </div>
