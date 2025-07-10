@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Users, Megaphone, Palette, Globe, MessageSquare } from "lucide-react";
+import { Users, Megaphone, Palette, Globe, MessageSquare, MessageCircle } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -83,25 +83,31 @@ const ServicesSection = () => {
               <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#FFB300] rounded-full"></div>
             </span> NESSA JORNADA?
           </h3>
-          <div className="relative inline-block">
+          
+          <div className="flex justify-center">
             <a 
-              href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Online" 
+              href="https://wa.me/5531986173170?text=Agende%20uma%20Consultoria%20Gratuita" 
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center justify-center bg-gradient-to-r from-[#FFB300] to-[#FF8C00] hover:from-[#FF8C00] hover:to-[#FFB300] text-black font-bold py-5 px-10 rounded-full text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl border-2 border-transparent hover:border-[#FFB300]/30"
-              style={{
-                textTransform: 'uppercase',
-                letterSpacing: '1px',
-                textShadow: '0 1px 2px rgba(0,0,0,0.1)'
-              }}
+              className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-green-500 via-green-600 to-green-700 hover:from-green-600 hover:via-green-700 hover:to-green-800 text-white font-bold py-4 px-8 sm:py-5 sm:px-12 rounded-full text-base sm:text-lg transition-all duration-500 transform hover:scale-105 hover:shadow-2xl shadow-lg border-2 border-green-400/30 hover:border-green-300/50 w-full max-w-md sm:max-w-lg md:max-w-xl"
             >
-              <span className="relative z-10 group-hover:scale-105 transition-transform duration-300">
-                Agende uma Consultoria Online
+              {/* WhatsApp Icon */}
+              <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 fill-current" />
+              
+              {/* Button Text */}
+              <span className="relative z-10 font-extrabold tracking-wide uppercase text-sm sm:text-base md:text-lg leading-tight">
+                Agende uma Consultoria Gratuita
               </span>
-              <div className="absolute inset-0 bg-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              
+              {/* Shine Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 rounded-full"></div>
+              
+              {/* Glow Effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-green-400/20 to-green-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 scale-110"></div>
+              
+              {/* Pulse Ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-green-300/30 scale-100 group-hover:scale-110 group-hover:border-green-200/50 transition-all duration-500 animate-pulse"></div>
             </a>
-            <div className="absolute -inset-2 bg-gradient-to-r from-[#FFB300]/20 to-[#FF8C00]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
         </div>
       </div>
