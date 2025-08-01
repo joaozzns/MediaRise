@@ -17,19 +17,14 @@ const Navbar = () => {
   }, []);
 
   const navItems = [
-    { name: "Início", href: "#hero" },
-    { name: "Serviços", href: "#services" },
-    { name: "Sobre", href: "#about" },
-    { name: "Contato", href: "#contact" },
+    { name: "INÍCIO", href: "#hero" },
+    { name: "SERVIÇOS", href: "#services" },
+    { name: "SOBRE", href: "#about" },
+    { name: "CONTATO", href: "#contact" },
   ];
 
   return (
-    <nav className={cn(
-      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-      isScrolled 
-        ? "bg-black/95 backdrop-blur-md shadow-lg" 
-        : "bg-transparent"
-    )}>
+    <nav style={{ backgroundColor: '#212121' }} className="fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo - aumentado */}
@@ -37,7 +32,7 @@ const Navbar = () => {
             <img
               src="/lovable-uploads/da97c366-e7d4-4a21-80d3-85de190ad201.png"
               alt="MediaRise Logo"
-              className="h-12 w-auto sm:h-14 md:h-16 transition-all duration-300"
+              className="h-14 w-auto sm:h-16 md:h-18 lg:h-20 transition-all duration-300"
             />
           </div>
 
@@ -48,7 +43,7 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="nav-link text-sm font-medium"
+                  className="text-white hover:text-yellow-400 transition-colors duration-300 text-sm font-medium"
                   onClick={(e) => {
                     e.preventDefault();
                     const target = document.querySelector(item.href);
@@ -63,21 +58,19 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Contact Info - Desktop */}
-          <div className="hidden lg:flex items-center space-x-6 text-sm">
+          {/* Contact Icons - Desktop */}
+          <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:+5531986173170"
-              className="flex items-center space-x-2 text-gray-300 hover:text-pulse-500 transition-colors"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
             >
-              <Phone size={16} />
-              <span>(31) 98617-3170</span>
+              <Phone size={18} />
             </a>
             <a
               href="mailto:contato@mediarise.com.br"
-              className="flex items-center space-x-2 text-gray-300 hover:text-pulse-500 transition-colors"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
             >
-              <Mail size={16} />
-              <span>contato@mediarise.com.br</span>
+              <Mail size={18} />
             </a>
           </div>
 
@@ -104,7 +97,7 @@ const Navbar = () => {
         "md:hidden transition-all duration-300 ease-in-out",
         isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
       )}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-black/95 backdrop-blur-md">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3" style={{ backgroundColor: '#212121' }}>
           {navItems.map((item) => (
             <a
               key={item.name}
@@ -123,21 +116,19 @@ const Navbar = () => {
             </a>
           ))}
           
-          {/* Mobile contact info */}
-          <div className="border-t border-gray-700 mt-4 pt-4 space-y-2">
+          {/* Mobile contact icons */}
+          <div className="border-t border-gray-700 mt-4 pt-4 flex space-x-4 px-3">
             <a
               href="tel:+5531986173170"
-              className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-300 hover:text-white transition-colors"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
             >
-              <Phone size={16} />
-              <span>(31) 98617-3170</span>
+              <Phone size={18} />
             </a>
             <a
               href="mailto:contato@mediarise.com.br"
-              className="flex items-center space-x-2 px-3 py-2 text-sm text-gray-300 hover:text-white transition-colors"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
             >
-              <Mail size={16} />
-              <span>contato@mediarise.com.br</span>
+              <Mail size={18} />
             </a>
           </div>
         </div>

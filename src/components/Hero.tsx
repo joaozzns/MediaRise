@@ -23,9 +23,15 @@ const Hero = () => {
       className="overflow-hidden relative min-h-screen flex items-center justify-center" 
       id="hero" 
       style={{
-        background: 'radial-gradient(ellipse at center, #1a1a1a 0%, #000000 70%), linear-gradient(45deg, rgba(255, 179, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 50%, rgba(0, 0, 0, 0.9) 100%)',
+        backgroundImage: `url('/lovable-uploads/80a1bf36-9f2f-49f5-87f6-5da755019dcb.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
       }}
     >
+      {/* Overlay escuro para melhor contraste do texto */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      
       {/* Efeito de brilho dourado */}
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-radial from-yellow-400/20 via-yellow-500/10 to-transparent rounded-full blur-3xl animate-pulse-slow"></div>
@@ -35,11 +41,11 @@ const Hero = () => {
       <div className="container px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center" ref={containerRef}>
         {/* Lado esquerdo - Texto */}
         <div className="text-left">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-white mb-4 leading-tight drop-shadow-2xl">
             QUAL O SEU DIFERENCIAL?
           </h1>
           <div className="text-2xl md:text-3xl lg:text-4xl font-display font-bold">
-            <span className="text-white">O NOSSO É </span>
+            <span className="text-white drop-shadow-2xl">O NOSSO É </span>
             <span className="text-yellow-400 drop-shadow-lg animate-pulse-slow">VOCÊ!</span>
           </div>
         </div>
