@@ -26,13 +26,13 @@ const Navbar = () => {
   return (
     <nav style={{ backgroundColor: '#212121' }} className="fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo - aumentado */}
+        <div className="flex items-center justify-between h-16">
+          {/* Logo - MediaRise */}
           <div className="flex-shrink-0">
             <img
-              src="/lovable-uploads/da97c366-e7d4-4a21-80d3-85de190ad201.png"
+              src="/lovable-uploads/7b7abc61-03c5-4fdd-9234-affa591edc08.png"
               alt="MediaRise Logo"
-              className="h-14 w-auto sm:h-16 md:h-18 lg:h-20 transition-all duration-300"
+              className="h-10 w-auto sm:h-12 md:h-14 transition-all duration-300"
             />
           </div>
 
@@ -62,15 +62,15 @@ const Navbar = () => {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:+5531986173170"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
+              className="text-white hover:text-yellow-400 transition-colors duration-300 p-2"
             >
-              <Phone size={18} />
+              <Phone size={20} />
             </a>
             <a
               href="mailto:contato@mediarise.com.br"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
+              className="text-white hover:text-yellow-400 transition-colors duration-300 p-2"
             >
-              <Mail size={18} />
+              <Mail size={20} />
             </a>
           </div>
 
@@ -120,15 +120,15 @@ const Navbar = () => {
           <div className="border-t border-gray-700 mt-4 pt-4 flex space-x-4 px-3">
             <a
               href="tel:+5531986173170"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
+              className="text-white hover:text-yellow-400 transition-colors duration-300 p-2"
             >
-              <Phone size={18} />
+              <Phone size={20} />
             </a>
             <a
               href="mailto:contato@mediarise.com.br"
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-yellow-400 hover:bg-yellow-500 text-black transition-colors duration-300"
+              className="text-white hover:text-yellow-400 transition-colors duration-300 p-2"
             >
-              <Mail size={18} />
+              <Mail size={20} />
             </a>
           </div>
         </div>

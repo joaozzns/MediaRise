@@ -50,23 +50,9 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Lado direito - Imagem do planeta/espaço */}
+        {/* Lado direito - espaço vazio ou conteúdo adicional */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="relative w-80 h-80 lg:w-96 lg:h-96">
-            {/* Imagem do planeta com efeitos */}
-            <div className="absolute inset-0 rounded-full bg-gradient-conic from-yellow-400 via-amber-500 to-orange-600 p-1 animate-float">
-              <div className="w-full h-full rounded-full bg-gradient-radial from-gray-800 via-gray-900 to-black shadow-2xl"></div>
-            </div>
-            
-            {/* Efeito de iluminação dourada */}
-            <div className="absolute top-4 left-4 w-24 h-24 bg-yellow-400/30 rounded-full blur-xl"></div>
-            <div className="absolute bottom-8 right-8 w-16 h-16 bg-amber-400/25 rounded-full blur-lg"></div>
-            
-            {/* Pontos de luz simulando estrelas */}
-            <div className="absolute top-12 right-12 w-2 h-2 bg-yellow-300 rounded-full animate-pulse"></div>
-            <div className="absolute bottom-16 left-16 w-1 h-1 bg-white rounded-full animate-pulse"></div>
-            <div className="absolute top-32 left-8 w-1.5 h-1.5 bg-yellow-200 rounded-full animate-pulse"></div>
-          </div>
+          {/* Removido o círculo do planeta */}
         </div>
       </div>
       
