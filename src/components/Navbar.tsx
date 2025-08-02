@@ -24,7 +24,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav style={{ backgroundColor: '#212121' }} className="fixed top-0 left-0 right-0 z-50 shadow-lg">
+    <nav style={{ backgroundColor: '#0d0d0d' }} className="fixed top-0 left-0 right-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo - MediaRise */}
@@ -36,9 +36,9 @@ const Navbar = () => {
             />
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          {/* Desktop Navigation - Centralizado */}
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2">
+            <div className="flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -58,8 +58,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Contact Icons - Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
+          {/* Contact Icons - Desktop - Movido mais para esquerda */}
+          <div className="hidden lg:flex items-center space-x-4 mr-8">
             <a
               href="tel:+5531986173170"
               className="text-white hover:text-yellow-400 transition-colors duration-300 p-2"
@@ -97,7 +97,7 @@ const Navbar = () => {
         "md:hidden transition-all duration-300 ease-in-out",
         isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
       )}>
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3" style={{ backgroundColor: '#212121' }}>
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3" style={{ backgroundColor: '#0d0d0d' }}>
           {navItems.map((item) => (
             <a
               key={item.name}
